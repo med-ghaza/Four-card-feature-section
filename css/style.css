@@ -1,0 +1,159 @@
+/* Start Variables */
+
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+}
+
+/* End Global Rules */
+
+/* Start Four Card Feature */
+
+main {
+  margin: 5rem 2rem;
+}
+
+main .text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+main h1 {
+  font-weight: 200;
+  font-size: 25px;
+  color: var(--Very-Dark-Blue);
+}
+
+@media (min-width: 992px) {
+  main h1 {
+    font-size: 40px;
+  }
+}
+
+main h1 span {
+  display: block;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+  margin-top: 0.5rem;
+}
+
+main .text p {
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  main .text p {
+    width: 500px;
+    margin: 1rem auto;
+  }
+}
+
+main p {
+  font-size: 15px;
+  color: var(--Grayish-Blue);
+  line-height: 26px;
+  margin: 1rem 0 2.5rem;
+}
+
+@media (min-width: 992px) {
+  main .content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+main .content .box {
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0px 5px 12px 0px var(--Grayish-Blue);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+main .content .box::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  main .content .box {
+    flex-basis: 33%;
+    margin: 0;
+  }
+  main .content .container {
+    flex-basis: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .content .box {
+    flex-basis: 27%;
+  }
+  main .content .container {
+    flex-basis: 27%;
+  }
+}
+
+main .content .super::before {
+  background-color: var(--Cyan);
+}
+
+main .content .container .box {
+  margin-bottom: 2rem;
+}
+
+main .content .team::before {
+  background-color: var(--Red);
+}
+
+main .content .karma::before {
+  background-color: var(--Orange);
+}
+
+main .content .calc::before {
+  background-color: var(--Blue);
+}
+
+main .content .box h2 {
+  font-size: 20px;
+}
+
+main .content .box img {
+  display: block;
+  margin: 0 0 1rem auto;
+}
+
+/* End Four Card Feature */
