@@ -120,10 +120,10 @@ main .content .box::before {
 
 @media (min-width: 1200px) {
   main .content .box {
-    flex-basis: 27%;
+    flex-basis: 30%;
   }
   main .content .container {
-    flex-basis: 27%;
+    flex-basis: 30%;
   }
 }
 
